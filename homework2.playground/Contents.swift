@@ -10,6 +10,7 @@ import UIKit
 let a: Float = 3.14
 let b: Float = 42.0
 let sum: Double = Double(a + b)
+let formated = String(format: "%.2f", sum)
 print(sum)
 
 //MARK: Exercise 2
@@ -58,7 +59,12 @@ print("new: \(qty) MacBook Pro with the price of: \(price) EUR, will cost you: \
  Fix this Fatal error inside the if-else statements to print whenever this age can be converted to Int or not!
  */
 let userInputAge: String = "33a"
-
+let convertToInt = Int(userInputAge)
+if convertToInt == nil {
+    print("User input can't be converted to Int")
+} else {
+    print("User input can be converted to Int")
+}
 
 //MARK: Exercise 5
 /*
